@@ -3,6 +3,7 @@ title: "MB5370 Module 04. Workshop 1 - Introduction"
 author: "Ben Cresswell"
 output: html_document
 date: "2024-03-22"
+PHOEBE HIRD WORK
 ---
 
 ```{r setup, include=FALSE}
@@ -237,6 +238,7 @@ se displaye the confidence interval, so se FALSE doesnt show any confidence inte
 
 
 3.  Will these two graphs look different? Why/why not?
+No they are the same plot. 
 ```{r}
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
   geom_point() + 
@@ -282,6 +284,7 @@ ggplot(data = demo) +
   geom_bar(mapping = aes(x = cut, y = freq), stat = "identity")
 ```
 Question: Why did we specify now specify a y axis?
+to tell it we want it to plot frequency 
 
 # What if we want to know the proportion rather than the absolute frequency?
 ```{r}
