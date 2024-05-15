@@ -1,0 +1,27 @@
+---
+title: "Workshop_3"
+author: "Phoebe Hird"
+date: "2024-05-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## R Markdown script for Workshop 3 
+
+
+```{r cars}
+
+```
+
+## Including Plots
+
+
+```{r pressure, echo=FALSE}
+
+```
+
+
