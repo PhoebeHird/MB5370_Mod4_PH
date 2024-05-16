@@ -1,0 +1,38 @@
+---
+title: "Workshop_4"
+author: "Phoebe Hird"
+date: "2024-05-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+```{r cars}
+# install and load your packages
+#install.packages("sf") 
+#install.packages("terra")
+#install.packages("tmap")
+
+
+#load into R library
+library(tidyverse)
+library(sf) # simple features
+library (terra) # for raster
+library(tmap) # Thematic maps are geographical maps in which spatial data distributions are visualized
+```
+
+## 
+
+```{r}
+#load the copepod data into R studio
+library(readr)
+dat <- read_csv("data-for-course/copepods_raw.csv")
+dat
+
+
+```
+
