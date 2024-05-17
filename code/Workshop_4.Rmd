@@ -95,4 +95,33 @@ map <- tm_shape(sdat) +
 tmap_save(map, filename = "../output/Richness-map.png", 
           width = 600, height = 600)
 ```
+```{r}
+aus <- st_read("../data/data-for-course/spatial-data/Aussie/Aussie.shp")
+```
+
+```{r}
+shelf <- st_read("../data/data-for-course/spatial-data/aus_shelf/aus_shelf.shp")
+
+```
+```{r}
+tm_shape(shelf) + 
+  tm_polygons()
+```
+```{r}
+aus_map <- tm_shape(shelf, bbox = sdat) + 
+  tm_polygons() +
+  tm_shape(aus) + 
+  tm_polygons() + 
+  tm_shape(sdat) + 
+  tm_dots("richness_raw",palette = "viridis")
+  tmap_options(bg.color = "white", legend.text.color = "black")
+   
+```
+```{r}
+vignette('tmap-getstarted')
+```
+```{r}
+tmap_save(aus_map, filename = "../output/Aus_copepod_map.png", 
+          width = 600, height = 600)
+```
 
